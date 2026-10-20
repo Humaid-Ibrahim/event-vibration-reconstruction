@@ -1,0 +1,18 @@
+{
+  "0": {
+    "Off_set3_trail3": 0.708,
+    "Off_set2_trail3": 0.867,
+    "On_set1_trail3": 0.887,
+    "Off_set1_trail3": 0.918,
+    "On_set3_trail3": 0.828,
+    "On_set2_trail3": -68.003
+  },
+  "3": {
+    "Off_set3_trail3": 0.697,
+    "Off_set2_trail3": 0.867,
+    "On_set1_trail3": 0.838,
+    "Off_set1_trail3": 0.912,
+    "On_set3_trail3": 0.76,
+    "On_set2_trail3": -572.331
+  }
+}

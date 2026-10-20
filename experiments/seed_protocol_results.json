@@ -1,0 +1,1653 @@
+{
+  "protocol": {
+    "seeds_main": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "seeds_cv_abl": [
+      42,
+      43,
+      44
+    ],
+    "warmup_epochs": 5,
+    "collapse_rule": "val R2 < 0.3 at early stop -> restart seed+1000/+2000, max 3 attempts",
+    "nominal_0.1_note": "mean-predictor collapse sits at val R2 ~0.19-0.21, so the operative threshold is 0.3"
+  },
+  "headline_trial2": {
+    "test": {
+      "r2": [
+        0.703646981716156,
+        0.01480913624853005
+      ],
+      "mse": [
+        0.031123317405581476,
+        0.0015552701322257359
+      ],
+      "mae": [
+        0.06721047386527061,
+        0.001899400651311609
+      ],
+      "spec_nrmse": [
+        0.3319037675857544,
+        0.011935595052200172
+      ],
+      "decay_err": [
+        0.1735033110268753,
+        0.016435532822102625
+      ],
+      "env_r2": [
+        0.8878146171569824,
+        0.011454835586910767
+      ],
+      "dbl_ratio_true": [
+        0.06830596240858236,
+        1.3877787807814457e-17
+      ],
+      "dbl_ratio_pred": [
+        0.1312269468170901,
+        0.022623629660886695
+      ]
+    },
+    "test_per_slot": [
+      {
+        "r2": 0.722809910774231,
+        "mse": 0.029110806062817574,
+        "mae": 0.06719709187746048,
+        "spec_nrmse": 0.31688809394836426,
+        "decay_err": 0.20192856998972575,
+        "env_r2": 0.9107769727706909,
+        "dbl_ratio_true": 0.06830596240858237,
+        "dbl_ratio_pred": 0.1047830618917942
+      },
+      {
+        "r2": 0.6998738050460815,
+        "mse": 0.031519580632448196,
+        "mae": 0.06601788848638535,
+        "spec_nrmse": 0.339326947927475,
+        "decay_err": 0.16634052132842783,
+        "env_r2": 0.8858367204666138,
+        "dbl_ratio_true": 0.06830596240858237,
+        "dbl_ratio_pred": 0.12646514922380447
+      },
+      {
+        "r2": 0.706537127494812,
+        "mse": 0.030819794163107872,
+        "mae": 0.06682158261537552,
+        "spec_nrmse": 0.35314854979515076,
+        "decay_err": 0.15560001674700344,
+        "env_r2": 0.8897826075553894,
+        "dbl_ratio_true": 0.06830596240858237,
+        "dbl_ratio_pred": 0.15986046629647413
+      },
+      {
+        "r2": 0.6937735676765442,
+        "mse": 0.032160233706235886,
+        "mae": 0.06881832331418991,
+        "spec_nrmse": 0.3152283728122711,
+        "decay_err": 0.17436758422169576,
+        "env_r2": 0.8888546824455261,
+        "dbl_ratio_true": 0.06830596240858237,
+        "dbl_ratio_pred": 0.14610396760205427
+      },
+      {
+        "r2": 0.6887973546981812,
+        "mse": 0.032682839781045914,
+        "mae": 0.06896662712097168,
+        "spec_nrmse": 0.3411247730255127,
+        "decay_err": 0.16284582245134768,
+        "env_r2": 0.8779621124267578,
+        "dbl_ratio_true": 0.06830596240858237,
+        "dbl_ratio_pred": 0.11634896074732144
+      },
+      {
+        "r2": 0.6837550401687622,
+        "mse": 0.033212389796972275,
+        "mae": 0.06903605908155441,
+        "spec_nrmse": 0.3394343852996826,
+        "decay_err": 0.17193497612959072,
+        "env_r2": 0.8991841077804565,
+        "dbl_ratio_true": 0.06830596240858237,
+        "dbl_ratio_pred": 0.11895715569456418
+      },
+      {
+        "r2": 0.7144122123718262,
+        "mse": 0.02999274432659149,
+        "mae": 0.06656184792518616,
+        "spec_nrmse": 0.32772931456565857,
+        "decay_err": 0.20389355313293453,
+        "env_r2": 0.8675642013549805,
+        "dbl_ratio_true": 0.06830596240858237,
+        "dbl_ratio_pred": 0.1415631671746572
+      },
+      {
+        "r2": 0.7174892425537109,
+        "mse": 0.029669588431715965,
+        "mae": 0.0648723617196083,
+        "spec_nrmse": 0.32851073145866394,
+        "decay_err": 0.15814265455633902,
+        "env_r2": 0.8888092637062073,
+        "dbl_ratio_true": 0.06830596240858237,
+        "dbl_ratio_pred": 0.1639079786837101
+      },
+      {
+        "r2": 0.684754490852356,
+        "mse": 0.03310742229223251,
+        "mae": 0.0700233057141304,
+        "spec_nrmse": 0.339428573846817,
+        "decay_err": 0.1804883346166346,
+        "env_r2": 0.8769729733467102,
+        "dbl_ratio_true": 0.06830596240858237,
+        "dbl_ratio_pred": 0.14370519202202559
+      },
+      {
+        "r2": 0.7242670655250549,
+        "mse": 0.028957774862647057,
+        "mae": 0.06378965079784393,
+        "spec_nrmse": 0.318217933177948,
+        "decay_err": 0.15949107709505364,
+        "env_r2": 0.8924025297164917,
+        "dbl_ratio_true": 0.06830596240858237,
+        "dbl_ratio_pred": 0.09057436883449554
+      }
+    ],
+    "slots": [
+      {
+        "slot_seed": 42,
+        "attempts": [
+          {
+            "seed": 42,
+            "epochs_run": 81,
+            "val_r2": 0.8127
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 42,
+        "final_val_r2": 0.8127,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 43,
+        "attempts": [
+          {
+            "seed": 43,
+            "epochs_run": 140,
+            "val_r2": 0.8394
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 43,
+        "final_val_r2": 0.8394,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 44,
+        "attempts": [
+          {
+            "seed": 44,
+            "epochs_run": 80,
+            "val_r2": 0.8389
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 44,
+        "final_val_r2": 0.8389,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 45,
+        "attempts": [
+          {
+            "seed": 45,
+            "epochs_run": 1,
+            "val_r2": 0.1888
+          },
+          {
+            "seed": 1045,
+            "epochs_run": 90,
+            "val_r2": 0.8219
+          }
+        ],
+        "n_restarts": 1,
+        "final_seed": 1045,
+        "final_val_r2": 0.8219,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 46,
+        "attempts": [
+          {
+            "seed": 46,
+            "epochs_run": 86,
+            "val_r2": 0.8339
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 46,
+        "final_val_r2": 0.8339,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 47,
+        "attempts": [
+          {
+            "seed": 47,
+            "epochs_run": 126,
+            "val_r2": 0.8029
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 47,
+        "final_val_r2": 0.8029,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 48,
+        "attempts": [
+          {
+            "seed": 48,
+            "epochs_run": 80,
+            "val_r2": 0.8055
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 48,
+        "final_val_r2": 0.8055,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 49,
+        "attempts": [
+          {
+            "seed": 49,
+            "epochs_run": 93,
+            "val_r2": 0.8347
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 49,
+        "final_val_r2": 0.8347,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 50,
+        "attempts": [
+          {
+            "seed": 50,
+            "epochs_run": 148,
+            "val_r2": 0.7901
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 50,
+        "final_val_r2": 0.7901,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 51,
+        "attempts": [
+          {
+            "seed": 51,
+            "epochs_run": 107,
+            "val_r2": 0.8347
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 51,
+        "final_val_r2": 0.8347,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      }
+    ],
+    "n_slots_restarted": 1,
+    "n_unresolved": 0,
+    "test_r2_ci95": [
+      0.6943786576390266,
+      0.7130126272141933
+    ],
+    "baselines": {
+      "per_timestep_mean": {
+        "test": {
+          "r2": 0.06044977903366089,
+          "mse": 0.09867259114980698,
+          "mae": 0.11974003911018372,
+          "spec_nrmse": 0.7110584378242493,
+          "decay_err": 0.12046580617146259,
+          "env_r2": 0.30633336305618286,
+          "dbl_ratio_true": 0.06830596240858237,
+          "dbl_ratio_pred": 0.08345379680395126
+        }
+      },
+      "ridge": {
+        "alpha": 1000.0,
+        "test": {
+          "r2": 0.14372020959854126,
+          "mse": 0.08992743492126465,
+          "mae": 0.11445218324661255,
+          "spec_nrmse": 0.7184498906135559,
+          "decay_err": 0.11998845618512226,
+          "env_r2": 0.3042236566543579,
+          "dbl_ratio_true": 0.06830596240858237,
+          "dbl_ratio_pred": 0.08155485490957896
+        }
+      }
+    }
+  },
+  "secondary_trial5": {
+    "test": {
+      "r2": [
+        0.7474861204624176,
+        0.017584978667767846
+      ],
+      "mse": [
+        0.028282748349010945,
+        0.0019696012802414217
+      ],
+      "mae": [
+        0.06671938598155976,
+        0.0022372571176436404
+      ],
+      "spec_nrmse": [
+        0.4078703373670578,
+        0.018301843127591227
+      ],
+      "decay_err": [
+        0.11051494239612347,
+        0.016426022571796105
+      ],
+      "env_r2": [
+        0.8757266044616699,
+        0.013584060448580964
+      ],
+      "dbl_ratio_true": [
+        0.06902483043571314,
+        1.3877787807814457e-17
+      ],
+      "dbl_ratio_pred": [
+        0.1555950528010726,
+        0.019849887235476732
+      ]
+    },
+    "test_per_slot": [
+      {
+        "r2": 0.738908052444458,
+        "mse": 0.029243528842926025,
+        "mae": 0.06654499471187592,
+        "spec_nrmse": 0.41699662804603577,
+        "decay_err": 0.1005163577576458,
+        "env_r2": 0.8993390798568726,
+        "dbl_ratio_true": 0.06902483043571313,
+        "dbl_ratio_pred": 0.14051426264146963
+      },
+      {
+        "r2": 0.7461018562316895,
+        "mse": 0.028437793254852295,
+        "mae": 0.06785917282104492,
+        "spec_nrmse": 0.41062554717063904,
+        "decay_err": 0.0925482220891738,
+        "env_r2": 0.8699463605880737,
+        "dbl_ratio_true": 0.06902483043571313,
+        "dbl_ratio_pred": 0.1578701672454675
+      },
+      {
+        "r2": 0.7561759352684021,
+        "mse": 0.027309447526931763,
+        "mae": 0.06694325059652328,
+        "spec_nrmse": 0.41206398606300354,
+        "decay_err": 0.09192468138851412,
+        "env_r2": 0.8586470484733582,
+        "dbl_ratio_true": 0.06902483043571313,
+        "dbl_ratio_pred": 0.1224862802773714
+      },
+      {
+        "r2": 0.7364177107810974,
+        "mse": 0.02952246181666851,
+        "mae": 0.0674881562590599,
+        "spec_nrmse": 0.4265744388103485,
+        "decay_err": 0.11432113408645128,
+        "env_r2": 0.8754916191101074,
+        "dbl_ratio_true": 0.06902483043571313,
+        "dbl_ratio_pred": 0.14373090118169785
+      },
+      {
+        "r2": 0.740003228187561,
+        "mse": 0.029120871797204018,
+        "mae": 0.06825482845306396,
+        "spec_nrmse": 0.4082094728946686,
+        "decay_err": 0.1078229128158047,
+        "env_r2": 0.8558359146118164,
+        "dbl_ratio_true": 0.06902483043571313,
+        "dbl_ratio_pred": 0.17388825491070747
+      },
+      {
+        "r2": 0.747612476348877,
+        "mse": 0.0282685998827219,
+        "mae": 0.0650734007358551,
+        "spec_nrmse": 0.3943467140197754,
+        "decay_err": 0.1250302162605542,
+        "env_r2": 0.8920133113861084,
+        "dbl_ratio_true": 0.06902483043571313,
+        "dbl_ratio_pred": 0.14713003300130367
+      },
+      {
+        "r2": 0.7779228091239929,
+        "mse": 0.02487369440495968,
+        "mae": 0.06415384262800217,
+        "spec_nrmse": 0.368012398481369,
+        "decay_err": 0.14347015051179474,
+        "env_r2": 0.877383828163147,
+        "dbl_ratio_true": 0.06902483043571313,
+        "dbl_ratio_pred": 0.16172695656617483
+      },
+      {
+        "r2": 0.7714710235595703,
+        "mse": 0.025596322491765022,
+        "mae": 0.06449703127145767,
+        "spec_nrmse": 0.39074650406837463,
+        "decay_err": 0.12542053679210993,
+        "env_r2": 0.870871365070343,
+        "dbl_ratio_true": 0.06902483043571313,
+        "dbl_ratio_pred": 0.15550578385591507
+      },
+      {
+        "r2": 0.7119824886322021,
+        "mse": 0.032259322702884674,
+        "mae": 0.07187549769878387,
+        "spec_nrmse": 0.4355703294277191,
+        "decay_err": 0.09096319611711556,
+        "env_r2": 0.8675643801689148,
+        "dbl_ratio_true": 0.06902483043571313,
+        "dbl_ratio_pred": 0.20051337406039238
+      },
+      {
+        "r2": 0.7482656240463257,
+        "mse": 0.028195440769195557,
+        "mae": 0.06450368463993073,
+        "spec_nrmse": 0.4155573546886444,
+        "decay_err": 0.11313201614207068,
+        "env_r2": 0.8901731371879578,
+        "dbl_ratio_true": 0.06902483043571313,
+        "dbl_ratio_pred": 0.15258451427022615
+      }
+    ],
+    "slots": [
+      {
+        "slot_seed": 42,
+        "attempts": [
+          {
+            "seed": 42,
+            "epochs_run": 91,
+            "val_r2": 0.8345
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 42,
+        "final_val_r2": 0.8345,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 43,
+        "attempts": [
+          {
+            "seed": 43,
+            "epochs_run": 55,
+            "val_r2": 0.8207
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 43,
+        "final_val_r2": 0.8207,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 44,
+        "attempts": [
+          {
+            "seed": 44,
+            "epochs_run": 73,
+            "val_r2": 0.8393
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 44,
+        "final_val_r2": 0.8393,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 45,
+        "attempts": [
+          {
+            "seed": 45,
+            "epochs_run": 91,
+            "val_r2": 0.8137
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 45,
+        "final_val_r2": 0.8137,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 46,
+        "attempts": [
+          {
+            "seed": 46,
+            "epochs_run": 77,
+            "val_r2": 0.8228
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 46,
+        "final_val_r2": 0.8228,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 47,
+        "attempts": [
+          {
+            "seed": 47,
+            "epochs_run": 139,
+            "val_r2": 0.8263
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 47,
+        "final_val_r2": 0.8263,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 48,
+        "attempts": [
+          {
+            "seed": 48,
+            "epochs_run": 107,
+            "val_r2": 0.8185
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 48,
+        "final_val_r2": 0.8185,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 49,
+        "attempts": [
+          {
+            "seed": 49,
+            "epochs_run": 86,
+            "val_r2": 0.8179
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 49,
+        "final_val_r2": 0.8179,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 50,
+        "attempts": [
+          {
+            "seed": 50,
+            "epochs_run": 106,
+            "val_r2": 0.797
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 50,
+        "final_val_r2": 0.797,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      },
+      {
+        "slot_seed": 51,
+        "attempts": [
+          {
+            "seed": 51,
+            "epochs_run": 88,
+            "val_r2": 0.8143
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 51,
+        "final_val_r2": 0.8143,
+        "unresolved": false,
+        "below_nominal_0.1": false
+      }
+    ],
+    "n_slots_restarted": 0,
+    "n_unresolved": 0,
+    "test_r2_ci95": [
+      0.7365188175439834,
+      0.7583138610422612
+    ],
+    "baselines": {
+      "per_timestep_mean": {
+        "test": {
+          "r2": -0.03438270092010498,
+          "mse": 0.11585575342178345,
+          "mae": 0.13316623866558075,
+          "spec_nrmse": 0.6742787957191467,
+          "decay_err": 0.11139904616723854,
+          "env_r2": 0.394287109375,
+          "dbl_ratio_true": 0.06902483043571313,
+          "dbl_ratio_pred": 0.08590525388717651
+        }
+      },
+      "ridge": {
+        "alpha": 1e-05,
+        "test": {
+          "r2": 0.37548643350601196,
+          "mse": 0.0699484720826149,
+          "mae": 0.09682594984769821,
+          "spec_nrmse": 0.3316098749637604,
+          "decay_err": 0.1134587982525052,
+          "env_r2": 0.8378235101699829,
+          "dbl_ratio_true": 0.06902483043571313,
+          "dbl_ratio_pred": 0.07272152540584405
+        }
+      }
+    }
+  },
+  "cv": {
+    "test_overall": {
+      "r2": [
+        0.5433779239654541,
+        0.29267232228284595
+      ],
+      "mse": [
+        0.050815204096337156,
+        0.033886704145086564
+      ],
+      "mae": [
+        0.08519272903601328,
+        0.025363368641230944
+      ],
+      "spec_nrmse": [
+        0.43786340951919556,
+        0.1339809696931975
+      ],
+      "decay_err": [
+        0.13505271614938721,
+        0.03519291101372485
+      ],
+      "env_r2": [
+        0.7460110664367676,
+        0.18634185763958153
+      ],
+      "dbl_ratio_true": [
+        0.06876210915545623,
+        0.0014631115687992135
+      ],
+      "dbl_ratio_pred": [
+        0.14659395105308956,
+        0.054198125880679786
+      ]
+    },
+    "per_fold": {
+      "fold1": {
+        "r2": [
+          0.17423470815022787,
+          0.06668383922477182
+        ],
+        "mse": [
+          0.09873721996943156,
+          0.007973425189556177
+        ],
+        "mae": [
+          0.11521022766828537,
+          0.009778769278250632
+        ],
+        "spec_nrmse": [
+          0.5019750793774923,
+          0.12466441371243452
+        ],
+        "decay_err": [
+          0.09444551964095649,
+          0.012892585810127939
+        ],
+        "env_r2": [
+          0.680430551369985,
+          0.19398259478042487
+        ],
+        "dbl_ratio_true": [
+          0.06622937818368275,
+          0.0
+        ],
+        "dbl_ratio_pred": [
+          0.18725310266017914,
+          0.0891936827792717
+        ]
+      },
+      "fold2": {
+        "r2": [
+          0.24253803491592407,
+          0.14193287599139115
+        ],
+        "mse": [
+          0.07954947898785274,
+          0.014905944286636824
+        ],
+        "mae": [
+          0.10904426872730255,
+          0.008441824571722585
+        ],
+        "spec_nrmse": [
+          0.6218297481536865,
+          0.017593447919147683
+        ],
+        "decay_err": [
+          0.17319434426408065,
+          0.011449266987567493
+        ],
+        "env_r2": [
+          0.46543171008427936,
+          0.04441559676183684
+        ],
+        "dbl_ratio_true": [
+          0.06830596240858237,
+          0.0
+        ],
+        "dbl_ratio_pred": [
+          0.10488198821743332,
+          0.04290849045626718
+        ]
+      },
+      "fold3": {
+        "r2": [
+          0.8211043278376261,
+          0.0037644296555792776
+        ],
+        "mse": [
+          0.018184904629985493,
+          0.00038265586064057685
+        ],
+        "mae": [
+          0.05467082063357035,
+          0.001722745879337022
+        ],
+        "spec_nrmse": [
+          0.311514933904012,
+          0.008234730834912976
+        ],
+        "decay_err": [
+          0.17447568053896614,
+          0.004215903031436159
+        ],
+        "env_r2": [
+          0.9006981054941813,
+          0.01566827389695227
+        ],
+        "dbl_ratio_true": [
+          0.06974067836999893,
+          0.0
+        ],
+        "dbl_ratio_pred": [
+          0.13304552907745043,
+          0.012475940202925155
+        ]
+      },
+      "fold4": {
+        "r2": [
+          0.8267470598220825,
+          0.044849412328520195
+        ],
+        "mse": [
+          0.018656507444878418,
+          0.004829549334860281
+        ],
+        "mae": [
+          0.062188985447088875,
+          0.007496500244883517
+        ],
+        "spec_nrmse": [
+          0.3152863085269928,
+          0.05150180428966548
+        ],
+        "decay_err": [
+          0.12736383040040666,
+          0.016477926827237133
+        ],
+        "env_r2": [
+          0.8907438913981119,
+          0.044839022527142156
+        ],
+        "dbl_ratio_true": [
+          0.07050969637930393,
+          0.0
+        ],
+        "dbl_ratio_pred": [
+          0.13519697015484175,
+          0.016568291074397435
+        ]
+      },
+      "fold5": {
+        "r2": [
+          0.6522654891014099,
+          0.07490158678895613
+        ],
+        "mse": [
+          0.0389479094495376,
+          0.008389331187123802
+        ],
+        "mae": [
+          0.08484934270381927,
+          0.007721725751588049
+        ],
+        "spec_nrmse": [
+          0.43871097763379413,
+          0.047326396381328746
+        ],
+        "decay_err": [
+          0.10578420590252606,
+          0.005695748666683118
+        ],
+        "env_r2": [
+          0.7927510738372803,
+          0.04089665448728235
+        ],
+        "dbl_ratio_true": [
+          0.06902483043571313,
+          0.0
+        ],
+        "dbl_ratio_pred": [
+          0.1725921651555432,
+          0.008829653996546408
+        ]
+      }
+    },
+    "r2_all_runs": [
+      0.17867374420166016,
+      0.09043502807617188,
+      0.25359535217285156,
+      0.2682366371154785,
+      0.4020897150039673,
+      0.057287752628326416,
+      0.8256993889808655,
+      0.8211349844932556,
+      0.8164786100387573,
+      0.7639792561531067,
+      0.8660275936126709,
+      0.85023432970047,
+      0.605523407459259,
+      0.5933154821395874,
+      0.7579575777053833
+    ],
+    "r2_ci95": [
+      0.3925901321570079,
+      0.6854481463630994
+    ],
+    "slots": [
+      {
+        "slot_seed": 42,
+        "attempts": [
+          {
+            "seed": 42,
+            "epochs_run": 14,
+            "val_r2": 0.0601
+          },
+          {
+            "seed": 1042,
+            "epochs_run": 53,
+            "val_r2": 0.575
+          }
+        ],
+        "n_restarts": 1,
+        "final_seed": 1042,
+        "final_val_r2": 0.575,
+        "unresolved": false,
+        "below_nominal_0.1": false,
+        "fold": 1
+      },
+      {
+        "slot_seed": 43,
+        "attempts": [
+          {
+            "seed": 43,
+            "epochs_run": 5,
+            "val_r2": 0.0543
+          },
+          {
+            "seed": 1043,
+            "epochs_run": 27,
+            "val_r2": 0.0651
+          },
+          {
+            "seed": 2043,
+            "epochs_run": 11,
+            "val_r2": 0.0519
+          }
+        ],
+        "n_restarts": 2,
+        "final_seed": 1043,
+        "final_val_r2": 0.0651,
+        "unresolved": true,
+        "below_nominal_0.1": true,
+        "fold": 1
+      },
+      {
+        "slot_seed": 44,
+        "attempts": [
+          {
+            "seed": 44,
+            "epochs_run": 8,
+            "val_r2": 0.0551
+          },
+          {
+            "seed": 1044,
+            "epochs_run": 4,
+            "val_r2": 0.0511
+          },
+          {
+            "seed": 2044,
+            "epochs_run": 67,
+            "val_r2": 0.5245
+          }
+        ],
+        "n_restarts": 2,
+        "final_seed": 2044,
+        "final_val_r2": 0.5245,
+        "unresolved": false,
+        "below_nominal_0.1": false,
+        "fold": 1
+      },
+      {
+        "slot_seed": 42,
+        "attempts": [
+          {
+            "seed": 42,
+            "epochs_run": 21,
+            "val_r2": 0.2784
+          },
+          {
+            "seed": 1042,
+            "epochs_run": 17,
+            "val_r2": -0.7057
+          },
+          {
+            "seed": 2042,
+            "epochs_run": 1,
+            "val_r2": 0.0206
+          }
+        ],
+        "n_restarts": 2,
+        "final_seed": 42,
+        "final_val_r2": 0.2784,
+        "unresolved": true,
+        "below_nominal_0.1": false,
+        "fold": 2
+      },
+      {
+        "slot_seed": 43,
+        "attempts": [
+          {
+            "seed": 43,
+            "epochs_run": 20,
+            "val_r2": 0.0871
+          },
+          {
+            "seed": 1043,
+            "epochs_run": 15,
+            "val_r2": -0.2266
+          },
+          {
+            "seed": 2043,
+            "epochs_run": 1,
+            "val_r2": 0.0298
+          }
+        ],
+        "n_restarts": 2,
+        "final_seed": 43,
+        "final_val_r2": 0.0871,
+        "unresolved": true,
+        "below_nominal_0.1": true,
+        "fold": 2
+      },
+      {
+        "slot_seed": 44,
+        "attempts": [
+          {
+            "seed": 44,
+            "epochs_run": 21,
+            "val_r2": -3.795
+          },
+          {
+            "seed": 1044,
+            "epochs_run": 4,
+            "val_r2": 0.0374
+          },
+          {
+            "seed": 2044,
+            "epochs_run": 33,
+            "val_r2": -2.0552
+          }
+        ],
+        "n_restarts": 2,
+        "final_seed": 1044,
+        "final_val_r2": 0.0374,
+        "unresolved": true,
+        "below_nominal_0.1": true,
+        "fold": 2
+      },
+      {
+        "slot_seed": 42,
+        "attempts": [
+          {
+            "seed": 42,
+            "epochs_run": 111,
+            "val_r2": 0.8602
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 42,
+        "final_val_r2": 0.8602,
+        "unresolved": false,
+        "below_nominal_0.1": false,
+        "fold": 3
+      },
+      {
+        "slot_seed": 43,
+        "attempts": [
+          {
+            "seed": 43,
+            "epochs_run": 67,
+            "val_r2": 0.8245
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 43,
+        "final_val_r2": 0.8245,
+        "unresolved": false,
+        "below_nominal_0.1": false,
+        "fold": 3
+      },
+      {
+        "slot_seed": 44,
+        "attempts": [
+          {
+            "seed": 44,
+            "epochs_run": 48,
+            "val_r2": 0.8265
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 44,
+        "final_val_r2": 0.8265,
+        "unresolved": false,
+        "below_nominal_0.1": false,
+        "fold": 3
+      },
+      {
+        "slot_seed": 42,
+        "attempts": [
+          {
+            "seed": 42,
+            "epochs_run": 148,
+            "val_r2": 0.6943
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 42,
+        "final_val_r2": 0.6943,
+        "unresolved": false,
+        "below_nominal_0.1": false,
+        "fold": 4
+      },
+      {
+        "slot_seed": 43,
+        "attempts": [
+          {
+            "seed": 43,
+            "epochs_run": 104,
+            "val_r2": 0.7924
+          }
+        ],
+        "n_restarts": 0,
+        "final_seed": 43,
+        "final_val_r2": 0.7924,
+        "unresolved": false,
+        "below_nominal_0.1": false,
+        "fold": 4
+      },
+      {
+        "slot_seed": 44,
+        "attempts": [
+          {
+            "seed": 44,
+            "epochs_run": 7,
+            "val_r2": -0.025
+          },
+          {
+            "seed": 1044,
+            "epochs_run": 122,
+            "val_r2": 0.8119
+          }
+        ],
+        "n_restarts": 1,
+        "final_seed": 1044,
+        "final_val_r2": 0.8119,
+        "unresolved": false,
+        "below_nominal_0.1": false,
+        "fold": 4
+      },
+      {
+        "slot_seed": 42,
+        "attempts": [
+          {
+            "seed": 42,
+            "epochs_run": 57,
+            "val_r2": 0.2508
+          },
+          {
+            "seed": 1042,
+            "epochs_run": 69,
+            "val_r2": 0.1921
+          },
+          {
+            "seed": 2042,
+            "epochs_run": 1,
+            "val_r2": 0.0953
+          }
+        ],
+        "n_restarts": 2,
+        "final_seed": 42,
+        "final_val_r2": 0.2508,
+        "unresolved": true,
+        "below_nominal_0.1": false,
+        "fold": 5
+      },
+      {
+        "slot_seed": 43,
+        "attempts": [
+          {
+            "seed": 43,
+            "epochs_run": 11,
+            "val_r2": 0.0971
+          },
+          {
+            "seed": 1043,
+            "epochs_run": 65,
+            "val_r2": 0.2129
+          },
+          {
+            "seed": 2043,
+            "epochs_run": 20,
+            "val_r2": 0.0975
+          }
+        ],
+        "n_restarts": 2,
+        "final_seed": 1043,
+        "final_val_r2": 0.2129,
+        "unresolved": true,
+        "below_nominal_0.1": false,
+        "fold": 5
+      },
+      {
+        "slot_seed": 44,
+        "attempts": [
+          {
+            "seed": 44,
+            "epochs_run": 78,
+            "val_r2": 0.2019
+          },
+          {
+            "seed": 1044,
+            "epochs_run": 1,
+            "val_r2": 0.094
+          },
+          {
+            "seed": 2044,
+            "epochs_run": 109,
+            "val_r2": 0.2521
+          }
+        ],
+        "n_restarts": 2,
+        "final_seed": 2044,
+        "final_val_r2": 0.2521,
+        "unresolved": true,
+        "below_nominal_0.1": false,
+        "fold": 5
+      }
+    ],
+    "n_slots_restarted": 10,
+    "n_unresolved": 7,
+    "note": "fold 3 scored excluding On_set2_trail3 (audit exclusion)"
+  },
+  "ablation": {
+    "note": "fixed trial-5 split (same as original ablation run)",
+    "variants": {
+      "grid3x3_pol": {
+        "in_channels": 18,
+        "test": {
+          "r2": [
+            0.7470619479815165,
+            0.007082197231153165
+          ],
+          "mse": [
+            0.028330256541570027,
+            0.0007932384016368972
+          ],
+          "mae": [
+            0.06711580604314804,
+            0.0005502106034811627
+          ],
+          "spec_nrmse": [
+            0.41322872042655945,
+            0.0027282622654292207
+          ],
+          "decay_err": [
+            0.09499642041177792,
+            0.003911477297908047
+          ],
+          "env_r2": [
+            0.8759774963061014,
+            0.01715111858482672
+          ],
+          "dbl_ratio_true": [
+            0.06902483043571313,
+            0.0
+          ],
+          "dbl_ratio_pred": [
+            0.14029023672143617,
+            0.014446279912198514
+          ]
+        },
+        "slots": [
+          {
+            "slot_seed": 42,
+            "attempts": [
+              {
+                "seed": 42,
+                "epochs_run": 91,
+                "val_r2": 0.8345
+              }
+            ],
+            "n_restarts": 0,
+            "final_seed": 42,
+            "final_val_r2": 0.8345,
+            "unresolved": false,
+            "below_nominal_0.1": false
+          },
+          {
+            "slot_seed": 43,
+            "attempts": [
+              {
+                "seed": 43,
+                "epochs_run": 55,
+                "val_r2": 0.8207
+              }
+            ],
+            "n_restarts": 0,
+            "final_seed": 43,
+            "final_val_r2": 0.8207,
+            "unresolved": false,
+            "below_nominal_0.1": false
+          },
+          {
+            "slot_seed": 44,
+            "attempts": [
+              {
+                "seed": 44,
+                "epochs_run": 73,
+                "val_r2": 0.8393
+              }
+            ],
+            "n_restarts": 0,
+            "final_seed": 44,
+            "final_val_r2": 0.8393,
+            "unresolved": false,
+            "below_nominal_0.1": false
+          }
+        ],
+        "n_slots_restarted": 0,
+        "n_unresolved": 0
+      },
+      "grid3x3_nopol": {
+        "in_channels": 9,
+        "test": {
+          "r2": [
+            0.6441410382588705,
+            0.013216657432149606
+          ],
+          "mse": [
+            0.03985788797338804,
+            0.0014803307148838329
+          ],
+          "mae": [
+            0.08268228421608607,
+            0.0017346245759300482
+          ],
+          "spec_nrmse": [
+            0.48454076051712036,
+            0.013501655131874814
+          ],
+          "decay_err": [
+            0.10041130504195918,
+            0.00514028194238202
+          ],
+          "env_r2": [
+            0.7555345296859741,
+            0.02093146707415259
+          ],
+          "dbl_ratio_true": [
+            0.06902483043571313,
+            0.0
+          ],
+          "dbl_ratio_pred": [
+            0.17363282086120713,
+            0.012456358643013922
+          ]
+        },
+        "slots": [
+          {
+            "slot_seed": 42,
+            "attempts": [
+              {
+                "seed": 42,
+                "epochs_run": 112,
+                "val_r2": 0.7294
+              }
+            ],
+            "n_restarts": 0,
+            "final_seed": 42,
+            "final_val_r2": 0.7294,
+            "unresolved": false,
+            "below_nominal_0.1": false
+          },
+          {
+            "slot_seed": 43,
+            "attempts": [
+              {
+                "seed": 43,
+                "epochs_run": 1,
+                "val_r2": 0.2042
+              },
+              {
+                "seed": 1043,
+                "epochs_run": 114,
+                "val_r2": 0.7456
+              }
+            ],
+            "n_restarts": 1,
+            "final_seed": 1043,
+            "final_val_r2": 0.7456,
+            "unresolved": false,
+            "below_nominal_0.1": false
+          },
+          {
+            "slot_seed": 44,
+            "attempts": [
+              {
+                "seed": 44,
+                "epochs_run": 108,
+                "val_r2": 0.7303
+              }
+            ],
+            "n_restarts": 0,
+            "final_seed": 44,
+            "final_val_r2": 0.7303,
+            "unresolved": false,
+            "below_nominal_0.1": false
+          }
+        ],
+        "n_slots_restarted": 1,
+        "n_unresolved": 0
+      },
+      "global_pol": {
+        "in_channels": 2,
+        "test": {
+          "r2": [
+            -0.03330079714457194,
+            0.0013737268479731908
+          ],
+          "mse": [
+            0.11573457717895508,
+            0.00015386450092136936
+          ],
+          "mae": [
+            0.1331461270650228,
+            4.6137172085671175e-05
+          ],
+          "spec_nrmse": [
+            0.6743730107943217,
+            0.00036690541213986824
+          ],
+          "decay_err": [
+            0.11037929182515539,
+            0.003587158157895329
+          ],
+          "env_r2": [
+            0.3941066066424052,
+            0.0010190598015556614
+          ],
+          "dbl_ratio_true": [
+            0.06902483043571313,
+            0.0
+          ],
+          "dbl_ratio_pred": [
+            0.08791326565874946,
+            0.002590504355227604
+          ]
+        },
+        "slots": [
+          {
+            "slot_seed": 42,
+            "attempts": [
+              {
+                "seed": 42,
+                "epochs_run": 1,
+                "val_r2": 0.2055
+              },
+              {
+                "seed": 1042,
+                "epochs_run": 1,
+                "val_r2": 0.2048
+              },
+              {
+                "seed": 2042,
+                "epochs_run": 3,
+                "val_r2": 0.2054
+              }
+            ],
+            "n_restarts": 2,
+            "final_seed": 42,
+            "final_val_r2": 0.2055,
+            "unresolved": true,
+            "below_nominal_0.1": false
+          },
+          {
+            "slot_seed": 43,
+            "attempts": [
+              {
+                "seed": 43,
+                "epochs_run": 1,
+                "val_r2": 0.2056
+              },
+              {
+                "seed": 1043,
+                "epochs_run": 1,
+                "val_r2": 0.204
+              },
+              {
+                "seed": 2043,
+                "epochs_run": 1,
+                "val_r2": 0.2094
+              }
+            ],
+            "n_restarts": 2,
+            "final_seed": 2043,
+            "final_val_r2": 0.2094,
+            "unresolved": true,
+            "below_nominal_0.1": false
+          },
+          {
+            "slot_seed": 44,
+            "attempts": [
+              {
+                "seed": 44,
+                "epochs_run": 1,
+                "val_r2": 0.2032
+              },
+              {
+                "seed": 1044,
+                "epochs_run": 1,
+                "val_r2": 0.2061
+              },
+              {
+                "seed": 2044,
+                "epochs_run": 1,
+                "val_r2": 0.2059
+              }
+            ],
+            "n_restarts": 2,
+            "final_seed": 1044,
+            "final_val_r2": 0.2061,
+            "unresolved": true,
+            "below_nominal_0.1": false
+          }
+        ],
+        "n_slots_restarted": 3,
+        "n_unresolved": 3
+      },
+      "global_nopol": {
+        "in_channels": 1,
+        "test": {
+          "r2": [
+            -0.029835820198059082,
+            0.006641940365688532
+          ],
+          "mse": [
+            0.11534648388624191,
+            0.0007439290901776062
+          ],
+          "mae": [
+            0.13301686445871988,
+            0.00022806783939878343
+          ],
+          "spec_nrmse": [
+            0.6757096648216248,
+            0.0018188177346878472
+          ],
+          "decay_err": [
+            0.11257164367113648,
+            0.0018902712793381206
+          ],
+          "env_r2": [
+            0.39198388655980426,
+            0.0032713734878500726
+          ],
+          "dbl_ratio_true": [
+            0.06902483043571313,
+            0.0
+          ],
+          "dbl_ratio_pred": [
+            0.08821136545803811,
+            0.002448881522818228
+          ]
+        },
+        "slots": [
+          {
+            "slot_seed": 42,
+            "attempts": [
+              {
+                "seed": 42,
+                "epochs_run": 1,
+                "val_r2": 0.2048
+              },
+              {
+                "seed": 1042,
+                "epochs_run": 1,
+                "val_r2": 0.2049
+              },
+              {
+                "seed": 2042,
+                "epochs_run": 5,
+                "val_r2": 0.2049
+              }
+            ],
+            "n_restarts": 2,
+            "final_seed": 1042,
+            "final_val_r2": 0.2049,
+            "unresolved": true,
+            "below_nominal_0.1": false
+          },
+          {
+            "slot_seed": 43,
+            "attempts": [
+              {
+                "seed": 43,
+                "epochs_run": 1,
+                "val_r2": 0.2042
+              },
+              {
+                "seed": 1043,
+                "epochs_run": 1,
+                "val_r2": 0.2058
+              },
+              {
+                "seed": 2043,
+                "epochs_run": 1,
+                "val_r2": 0.206
+              }
+            ],
+            "n_restarts": 2,
+            "final_seed": 2043,
+            "final_val_r2": 0.206,
+            "unresolved": true,
+            "below_nominal_0.1": false
+          },
+          {
+            "slot_seed": 44,
+            "attempts": [
+              {
+                "seed": 44,
+                "epochs_run": 1,
+                "val_r2": 0.205
+              },
+              {
+                "seed": 1044,
+                "epochs_run": 25,
+                "val_r2": 0.2194
+              },
+              {
+                "seed": 2044,
+                "epochs_run": 2,
+                "val_r2": 0.2038
+              }
+            ],
+            "n_restarts": 2,
+            "final_seed": 1044,
+            "final_val_r2": 0.2194,
+            "unresolved": true,
+            "below_nominal_0.1": false
+          }
+        ],
+        "n_slots_restarted": 3,
+        "n_unresolved": 3
+      }
+    }
+  }
+}

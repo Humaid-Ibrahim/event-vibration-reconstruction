@@ -1,0 +1,49 @@
+{
+  "split_stats": {
+    "train": {
+      "X_mean": -2.925374076312437e-07,
+      "X_std": 0.09336687624454498,
+      "y_mean": 0.0010463347425684333,
+      "y_std": 0.32693353295326233,
+      "n": 18
+    },
+    "val": {
+      "X_mean": 3.296298345389914e-08,
+      "X_std": 0.07591898739337921,
+      "y_mean": 0.0022643946576863527,
+      "y_std": 0.3281518518924713,
+      "n": 6
+    },
+    "test": {
+      "X_mean": 4.497828598459819e-08,
+      "X_std": 0.07548022270202637,
+      "y_mean": 0.001995338127017021,
+      "y_std": 0.3346710801124573,
+      "n": 6
+    }
+  },
+  "scalers_pkl": {
+    "x_scaler": {
+      "type": "StandardScaler",
+      "n_features": 36864,
+      "n_samples_seen": 18
+    },
+    "y_scaler": {
+      "type": "StandardScaler",
+      "n_features": 2048,
+      "n_samples_seen": 18
+    }
+  },
+  "fit_on_train_only_by_count": true,
+  "y_scaler_mean_matches": {
+    "dist_to_train_mean": 3.0101628220087093e-09,
+    "dist_to_all_mean": 0.01759006294414657,
+    "closest": "train"
+  },
+  "x_scaler_mean_matches": {
+    "dist_to_train_mean": 0.0002557751108528971,
+    "dist_to_all_mean": 0.004565088823741259,
+    "closest": "train"
+  },
+  "verdict": "PASS (no leakage)"
+}

@@ -1,0 +1,201 @@
+{
+  "paired_headtohead_test6": {
+    "recordings": [
+      "Off_set1_trail5",
+      "Off_set2_trail5",
+      "Off_set3_trail5",
+      "On_set1_trail5",
+      "On_set2_trail5",
+      "On_set3_trail5"
+    ],
+    "metrics": {
+      "r2": {
+        "diffs_ours_minus_ref": [
+          0.1527,
+          0.2964,
+          -0.2025,
+          0.3002,
+          0.0399,
+          0.029
+        ],
+        "ours_wins": 5,
+        "n": 6,
+        "sign_test_p": 0.2187500000000003,
+        "wilcoxon_p": 0.21875,
+        "direction_better": "higher"
+      },
+      "spec_nrmse": {
+        "diffs_ours_minus_ref": [
+          -0.1594,
+          -0.2994,
+          0.1652,
+          -0.3098,
+          -0.0857,
+          -0.0029
+        ],
+        "ours_wins": 5,
+        "n": 6,
+        "sign_test_p": 0.2187500000000003,
+        "wilcoxon_p": 0.21875,
+        "direction_better": "lower"
+      },
+      "decay_err": {
+        "diffs_ours_minus_ref": [
+          -0.0977,
+          0.1739,
+          0.1516,
+          -0.0666,
+          -0.1605,
+          -0.1097
+        ],
+        "ours_wins": 4,
+        "n": 6,
+        "sign_test_p": 0.6875000000000004,
+        "wilcoxon_p": 1.0,
+        "direction_better": "lower"
+      },
+      "env_r2": {
+        "diffs_ours_minus_ref": [
+          0.041,
+          0.0558,
+          -0.2418,
+          0.0673,
+          -0.0514,
+          -0.1304
+        ],
+        "ours_wins": 3,
+        "n": 6,
+        "sign_test_p": 1.0,
+        "wilcoxon_p": 0.6875,
+        "direction_better": "higher"
+      }
+    }
+  },
+  "bootstrap_ci_95": {
+    "n_resamples": 10000,
+    "fixed_split_8seed_mean_r2": {
+      "mean": 0.6359404698014259,
+      "ci": [
+        0.4383373335003853,
+        0.7481697648763657
+      ],
+      "n": 8
+    },
+    "fixed_split_stable_band_mean_r2": {
+      "mean": 0.7315871460097176,
+      "ci": [
+        0.7051489523478917,
+        0.7540428383009774
+      ],
+      "n": 7,
+      "definition": "seeds with test R2 >= 0.1"
+    },
+    "cv_pooled_simple1dcnn_r2": {
+      "mean": 0.4376887783408165,
+      "ci": [
+        0.33643897201865913,
+        0.5384063026681543
+      ],
+      "n": 40,
+      "definition": "40 fold x seed runs, fold 3 scored excl. On_set2_trail3"
+    },
+    "cv_pooled_ridge_r2": {
+      "mean": 0.1859445571899414,
+      "ci": [
+        0.09776374101638793,
+        0.271310293674469
+      ],
+      "n": 5,
+      "definition": "5 per-fold values (deterministic), fold 3 excl. treatment"
+    }
+  },
+  "sparsity": {
+    "processed_X_exact_zero_frac": 0.3333333333333333,
+    "processed_X_dead_channel_frac": 0.3333333333333333,
+    "raw_patch16px_1ms_zero_frac": [
+      0.9450044292243042,
+      0.06004968764837356
+    ],
+    "raw_roi3x3_4ms_zero_frac": [
+      0.33868836561297505,
+      0.010355377395281784
+    ],
+    "raw_roi3x3_4ms_zero_frac_live_channels": [
+      0.00803254841946247,
+      0.015533066092922668
+    ],
+    "notes": "patch-level from REF-EvSet level-1 caches (full recording span); ROI-grid 4 ms bins approximate our 3.906 ms pipeline bins"
+  },
+  "dominant_freq": {
+    "On_set3_trail1_hz": 6.75,
+    "others_mean_hz": 6.806034482758621,
+    "others_min_hz": 6.75,
+    "others_max_hz": 6.875,
+    "anomaly_offset_hz": -0.056034482758620996,
+    "per_recording": {
+      "Off_set1_trail1": 6.875,
+      "Off_set1_trail2": 6.875,
+      "Off_set1_trail3": 6.875,
+      "Off_set1_trail4": 6.875,
+      "Off_set1_trail5": 6.75,
+      "Off_set2_trail1": 6.75,
+      "Off_set2_trail2": 6.75,
+      "Off_set2_trail3": 6.75,
+      "Off_set2_trail4": 6.875,
+      "Off_set2_trail5": 6.875,
+      "Off_set3_trail1": 6.875,
+      "Off_set3_trail2": 6.875,
+      "Off_set3_trail3": 6.875,
+      "Off_set3_trail4": 6.75,
+      "Off_set3_trail5": 6.75,
+      "On_set1_trail1": 6.75,
+      "On_set1_trail2": 6.75,
+      "On_set1_trail3": 6.75,
+      "On_set1_trail4": 6.875,
+      "On_set1_trail5": 6.875,
+      "On_set2_trail1": 6.875,
+      "On_set2_trail2": 6.875,
+      "On_set2_trail3": 6.75,
+      "On_set2_trail4": 6.75,
+      "On_set2_trail5": 6.75,
+      "On_set3_trail1": 6.75,
+      "On_set3_trail2": 6.75,
+      "On_set3_trail3": 6.75,
+      "On_set3_trail4": 6.75,
+      "On_set3_trail5": 6.75
+    },
+    "anomaly_verdict": "NOT a trail1-specific anomaly. Every recording shows a systematic upward instantaneous-frequency drift of +0.6 to +0.9 Hz over the ringdown (early 0-2s ~6.55-6.8 Hz, late 2-6s ~7.4 Hz; amplitude-dependent stiffness). On a full-8s window all 30 recordings peak at 6.75-6.88 Hz incl. trail1 (6.75). The 7.63 Hz value came from REF-EvSets onset-6s Hanning window, where trail1 happens to tip to the late-ringdown lobe. Footnote should describe the drift, not a trail1 anomaly.",
+    "drift_check_hz": {
+      "On_set3_trail1": {
+        "early": 6.55,
+        "late": 7.44,
+        "onset6s": 7.62
+      },
+      "On_set3_trail2": {
+        "early": 6.62,
+        "late": 7.41,
+        "onset6s": 6.48
+      },
+      "On_set3_trail3": {
+        "early": 6.62,
+        "late": 7.4,
+        "onset6s": 6.52
+      },
+      "Off_set3_trail1": {
+        "early": 6.8,
+        "late": 7.41,
+        "onset6s": 6.69
+      },
+      "On_set2_trail2": {
+        "early": 6.81,
+        "late": 7.44,
+        "onset6s": 6.65
+      },
+      "Off_set1_trail1": {
+        "early": 6.75,
+        "late": 7.44,
+        "onset6s": 6.58
+      }
+    }
+  }
+}

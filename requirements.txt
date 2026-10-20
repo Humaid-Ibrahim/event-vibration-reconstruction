@@ -1,0 +1,59 @@
+# Core Deep Learning Libraries
+torch>=2.0.0
+torchvision>=0.15.0
+# tensorflow>=2.13.0  # Optional, if using TF models
+
+# Computer Vision
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+Pillow>=10.0.0
+scikit-image>=0.21.0
+albumentations>=1.3.0
+
+# Signal Processing
+scipy>=1.11.0
+librosa>=0.10.0
+pywavelets>=1.4.0
+
+# Data Processing and Analysis
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+h5py>=3.9.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+tensorboard>=2.13.0
+
+# Experiment Tracking
+mlflow>=2.5.0
+wandb>=0.15.0  # Optional
+tensorboardX>=2.6.0
+
+# Video Processing
+moviepy>=1.0.3
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.8
+
+# Configuration Management
+hydra-core>=1.3.0
+omegaconf>=2.3.0
+pyyaml>=6.0
+
+# Utilities
+tqdm>=4.65.0
+joblib>=1.3.0
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Jupyter Support
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+notebook>=7.0.0
+# Event-file decoding cache used by the dataloader
+lz4>=4.0.0

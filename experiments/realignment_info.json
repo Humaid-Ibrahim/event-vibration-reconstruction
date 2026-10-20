@@ -1,0 +1,17 @@
+{
+  "recording": "On_set2_trail3",
+  "train_row": 16,
+  "replication_maxabs_dX": 0.0,
+  "replication_maxabs_dy": 0.0,
+  "faulty_offset_s": -3.99493500078097,
+  "corrected_offset_s": -3.6814193571917713,
+  "shift_ms": 313.5156435891986,
+  "event_coverage_aligned_s": [
+    3.687734365463257,
+    8.0
+  ],
+  "audit_lag_before_bins": -90,
+  "audit_corr_before": 0.80376797914505,
+  "audit_lag_after_bins": -9,
+  "audit_corr_after": 0.6077571511268616
+}

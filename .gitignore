@@ -1,0 +1,36 @@
+# Raw dataset (download from Zenodo, see README)
+data/
+
+# Competitor code (clone separately, see README)
+competitors/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Caches and large derived files (the three small feature npz at the root
+# and experiments/predictions_*.npz are tracked deliberately)
+cache/
+downloads/
+results/
+*.pth
+*.lz4
+processed_data_128.npz
+processed_data_32.npz
+processed_data_square.npz
+processed_data_realigned.npz
+predictions.npz
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# LaTeX aux (if a paper dir is ever added)
+*.aux
+*.bbl
+*.blg
+*.synctex.gz
