@@ -41,7 +41,7 @@ Scripts live in `experiments/` and read/write relative to the repository root. T
 2. Headline results: `python experiments/run_headline_10x10.py` trains the 10x10 model on the headline split (test = trial 2) and the secondary split (test = trial 5), runs five-fold cross-validation by trial, and refits the ridge and mean-signal baselines on the same representation. Output: `experiments/headline_10x10_results.json`.
 3. 3x3 reference numbers and the architecture comparison: `experiments/run_seed_protocol.py`, `experiments/run_arch_comparison.py`, `experiments/run_arch_small.py`.
 4. Validity audits (scaler leakage, temporal alignment, split independence, trivial baselines): `audits/audit1_scaler_leakage.py` through `audit4_baselines.py`; findings summarized in `experiments/RESULTS.md`.
-5. Comparison with the training-free REF-EvSet spectral baseline: clone https://github.com/haoqiu111/REFEvSet-V1 into `competitors/REFEvSet-V1`, build their beam level-1 cache per their `reproduce.sh` stage 1, run their `scripts/beam_calibration.py`, then `python experiments/run_refevset_comparison.py`. Their repository is not vendored here.
+5. Comparison with the training-free REF-EvSet spectral baseline: clone https://github.com/haoqiu111/REFEvSet-V1 into `competitors/REFEvSet-V1`, build their beam level-1 cache per their `reproduce.sh` stage 1, run their `scripts/beam_calibration.py`, then `python experiments/run_refevset_comparison.py`. The paired comparison over all 30 recordings, using cross-validation fold predictions, is `python experiments/run_reviewer_fixes.py`. Their repository is not vendored here.
 6. Figures: `python experiments/make_figures.py` regenerates the four paper figures from the saved results.
 
 `experiments/RESULTS.md` collects the final numbers and points each one to the JSON file that carries the raw values.
@@ -56,7 +56,7 @@ Headline split: test = trial 2, validation = trial 4, training = trials 1, 3 and
 | Ridge on the same input | 0.667 | 0.300 | 0.780 |
 | Per-timestep train mean | 0.060 | 0.711 | 0.306 |
 
-Five-fold cross-validation by trial: 1D CNN 0.741 +/- 0.224 (95% CI [0.622, 0.844]) vs ridge 0.616; the CNN wins all five folds. Grid-resolution ablation (test R-squared): 1x1 collapses (0.06), 3x3 reaches 0.710, 5x5 reaches 0.737, 10x10 reaches 0.815. Full tables, per-fold values and restart counts are in `experiments/RESULTS.md` and the result JSON files.
+Five-fold cross-validation by trial: 1D CNN 0.741 +/- 0.224 (95% CI [0.622, 0.844]) vs ridge 0.616; the CNN wins all five folds. Grid-resolution ablation (test R-squared): 1x1 collapses (0.06), 3x3 reaches 0.710, 5x5 reaches 0.737, 10x10 reaches 0.815. Against the training-free REF-EvSet baseline the model wins 27 of 30 recordings on time-domain R-squared (0.773 vs 0.644, sign test p < 0.0001) even though their reconstruction receives a per-recording amplitude and lag fit. Full tables, per-fold values and restart counts are in `experiments/RESULTS.md` and the result JSON files.
 
 ## Citation
 

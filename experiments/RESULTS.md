@@ -55,7 +55,18 @@ Within every family the small-to-large gap is smaller than the gaps between fami
 
 We ran the released REF-EvSet beam pipeline unmodified on our recordings and scored both methods with the same metric code on the six trial-5 recordings, on a common onset-relative 6 s frame. Their reconstruction has arbitrary units and no fixed alignment, so it receives a per-recording oracle fit (least-squares amplitude and a lag search against the LDV target); our model predicts calibrated velocity with no per-recording fitting. Raw values: `refevset_comparison.json` and `headline_10x10_results.json` (key `refevset_frame_ours10x10`).
 
-Despite the asymmetry in their favor, our 10x10 model wins five of six recordings on time-domain R2 (median 0.86 against about 0.64) and has lower spectral NRMSE (0.347 against 0.497). The sixth recording scores below zero in this frame for our model (its full-window score is normal); the per-recording table is in the JSON. With six recordings a sign test cannot reach significance (p = 0.22 at 5 of 6). Neither method shows the 2x-f0 doubling artifact on any of the 30 recordings: both use signed event rates.
+The full comparison covers all 30 recordings: each one is scored with the model prediction from the cross-validation fold in which it was a test item (best-validation run per fold, predictions in `cv_predictions_10x10.npz`). Raw values: `reviewer_fixes_results.json`.
+
+| | n | Ours R2 | REF-EvSet R2 | R2 wins | Sign test p | Wilcoxon p |
+|---|---|---|---|---|---|---|
+| All recordings | 30 | 0.773 | 0.644 | 27/30 | <0.0001 | 0.0006 |
+| Excluding On_set2_trail3 | 29 | 0.800 | 0.642 | 27/29 | <0.0001 | <0.0001 |
+
+Spectral NRMSE wins: 28 of 30 (p < 0.0001). Despite the per-recording fit working in their favor, the advantage is statistically significant on both metrics. Neither method shows the 2x-f0 doubling artifact on any of the 30 recordings: both use signed event rates.
+
+## Decay-rate bias diagnosis
+
+The model's decay error on the main split (0.215 1/s mean absolute, per seed) traces to a systematic bias, not noise: the signed per-recording error is -0.231 +/- 0.102 1/s, so the model is over-damped, and ridge shares the direction at -0.084 +/- 0.061. Smoothing the prediction (moving averages, Savitzky-Golay on the envelope) does not close the gap; the best variant reaches 0.205. The likely cause is that mean-squared-error training under-weights the low-amplitude ringdown tail. Raw values: `reviewer_fixes_results.json` (key `task2_decay`).
 
 ## Validity audits
 
